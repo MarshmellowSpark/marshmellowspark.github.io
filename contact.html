@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Marshs Technical Enterprise</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Marshs Technical Enterprise</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="cta">Book a Visit</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle4" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Book a Visit</h1>
+    <p class="lead">Tell me what needs fixing and when you're available. I will confirm via phone or Facebook message.</p>
+
+    <form id="bookingForm" class="form">
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" required />
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" required />
+
+      <label for="email">Email (optional)</label>
+      <input id="email" name="email" type="email" />
+
+      <label for="service">Service needed</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option>TV / Home Theater</option>
+        <option>Phone / Tablet</option>
+        <option>PC / Laptop</option>
+        <option>Home Network / Wi‑Fi</option>
+        <option>Smart Home Devices</option>
+        <option>Other</option>
+      </select>
+
+      <label for="details">Short description</label>
+      <textarea id="details" name="details" rows="4" placeholder="Describe the problem" required></textarea>
+
+      <label for="date">Preferred date & time</label>
+      <input id="date" name="date" type="datetime-local" />
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Send Booking Request</button>
+        <button type="button" id="mailtoBtn" class="btn ghost">Send by Email</button>
+      </div>
+
+      <div id="formMessage" role="status" aria-live="polite"></div>
+    </form>
+
+    <section class="other-contact">
+      <h3>Other ways to contact</h3>
+      <p>Phone: <a href="tel:555-555-5555">(555) 555-5555</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/MarshsTechnicalEnterprise" target="_blank" rel="noopener">Marshs Technical Enterprise</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year4"></span> Marshs Technical Enterprise</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
